@@ -128,108 +128,7 @@
 									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">Account &amp; Billing Details</a>
 								</div>
 								<div id="collapseTwo" class="accordion-body collapse">
-									<div class="accordion-inner">
-										<div class="row-fluid">
-											<div class="span6">
-												<h4>Your Personal Details</h4>
-												<div class="control-group">
-													<label class="control-label">First Name</label>
-													<div class="controls">
-														<input type="text" placeholder="" class="input-xlarge">
-													</div>
-												</div>
-												<div class="control-group">
-													<label class="control-label">Last Name</label>
-													<div class="controls">
-														<input type="text" placeholder="" class="input-xlarge">
-													</div>
-												</div>					  
-												<div class="control-group">
-													<label class="control-label">Email Address</label>
-													<div class="controls">
-														<input type="text" placeholder="" class="input-xlarge">
-													</div>
-												</div>
-												<div class="control-group">
-													<label class="control-label">Telephone</label>
-													<div class="controls">
-														<input type="text" placeholder="" class="input-xlarge">
-													</div>
-												</div>
-												<div class="control-group">
-													<label class="control-label">Fax</label>
-													<div class="controls">
-														<input type="text" placeholder="" class="input-xlarge">
-													</div>
-												</div>
-											</div>
-											<div class="span6">
-												<h4>Your Address</h4>
-												<div class="control-group">
-													<label class="control-label">Company</label>
-													<div class="controls">
-														<input type="text" placeholder="" class="input-xlarge">
-													</div>
-												</div>
-												<div class="control-group">
-													<label class="control-label">Company ID:</label>
-													<div class="controls">
-														<input type="text" placeholder="" class="input-xlarge">
-													</div>
-												</div>					  
-												<div class="control-group">
-													<label class="control-label"><span class="required">*</span> Address 1:</label>
-													<div class="controls">
-														<input type="text" placeholder="" class="input-xlarge">
-													</div>
-												</div>
-												<div class="control-group">
-													<label class="control-label">Address 2:</label>
-													<div class="controls">
-														<input type="text" placeholder="" class="input-xlarge">
-													</div>
-												</div>
-												<div class="control-group">
-													<label class="control-label"><span class="required">*</span> City:</label>
-													<div class="controls">
-														<input type="text" placeholder="" class="input-xlarge">
-													</div>
-												</div>
-												<div class="control-group">
-													<label class="control-label"><span class="required">*</span> Post Code:</label>
-													<div class="controls">
-														<input type="text" placeholder="" class="input-xlarge">
-													</div>
-												</div>
-												<div class="control-group">
-													<label class="control-label"><span class="required">*</span> Country:</label>
-													<div class="controls">
-														<select class="input-xlarge">
-															<option value="1">Afghanistan</option>
-															<option value="2">Albania</option>
-															<option value="3">Algeria</option>
-															<option value="4">American Samoa</option>
-															<option value="5">Andorra</option>
-															<option value="6">Angola</option>
-														</select>
-													</div>
-												</div>
-												<div class="control-group">
-													<label class="control-label"><span class="required">*</span> Region / State:</label>
-													<div class="controls">
-														<select name="zone_id" class="input-xlarge">
-															<option value=""> --- Please Select --- </option>
-															<option value="3513">Aberdeen</option>
-															<option value="3514">Aberdeenshire</option>
-															<option value="3515">Anglesey</option>
-															<option value="3516">Angus</option>
-															<option value="3517">Argyll and Bute</option>
-														</select>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
+									<div id="dynamic-forms-container"></div>
 								</div>
 							</div>
 							<div class="accordion-group">
@@ -292,6 +191,19 @@
 				<span>Copyright 2022 Switcheroos  All right reserved.</span>
 			</section>
 		</div>
-		<script src="themes/js/common.js"></script>
+		<script src="themes/js/common.js"></script> <script src="https://cdn.switchpayments.com/libs/switch-5.stable.min.js"></script>
+		<!-- Step 3                         -->
+		<!-- Instatiante the client library -->
+		<script>
+			let formContainer = document.getElementById("dynamic-forms-container");
+			let formOptions = {
+				chargesUrl: "http://localhost:8000/charges.php",
+				merchantTransactionId: "123456",
+			};
+			let switchJs = new SwitchJs(SwitchJs.environments.TEST, "AY1NAHUkocpVMIag9i8xfOlDPBEjVUJMuwgmsEQHFzApwS2tmwhAousPm4XC0tl");
+			switchJs.dynamicForms(formContainer, formOptions);
+	
+	
+		</script>
     </body>
 </html>
