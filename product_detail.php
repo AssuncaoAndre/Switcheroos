@@ -61,16 +61,16 @@
 								<a href="themes/images/ladies/1.jpg" class="thumbnail" data-fancybox-group="group1" title="Description 1"><img alt="" src="themes/images/ladies/1.jpg"></a>												
 								<ul class="thumbnails small">								
 									<li class="span1">
-										<a href="themes/images/ladies/2.jpg" class="thumbnail" data-fancybox-group="group1" title="Description 2"><img src="themes/images/ladies/2.jpg" alt=""></a>
+										<a href="themes/images/ladies/1.jpg" class="thumbnail" data-fancybox-group="group1" title="Description 2"><img src="themes/images/ladies/1.jpg" alt=""></a>
 									</li>								
 									<li class="span1">
-										<a href="themes/images/ladies/3.jpg" class="thumbnail" data-fancybox-group="group1" title="Description 3"><img src="themes/images/ladies/3.jpg" alt=""></a>
+										<a href="themes/images/ladies/1.jpg" class="thumbnail" data-fancybox-group="group1" title="Description 3"><img src="themes/images/ladies/1.jpg" alt=""></a>
 									</li>													
 									<li class="span1">
-										<a href="themes/images/ladies/4.jpg" class="thumbnail" data-fancybox-group="group1" title="Description 4"><img src="themes/images/ladies/4.jpg" alt=""></a>
+										<a href="themes/images/ladies/1.jpg" class="thumbnail" data-fancybox-group="group1" title="Description 4"><img src="themes/images/ladies/1.jpg" alt=""></a>
 									</li>
 									<li class="span1">
-										<a href="themes/images/ladies/5.jpg" class="thumbnail" data-fancybox-group="group1" title="Description 5"><img src="themes/images/ladies/5.jpg" alt=""></a>
+										<a href="themes/images/ladies/1.jpg" class="thumbnail" data-fancybox-group="group1" title="Description 5"><img src="themes/images/ladies/1.jpg" alt=""></a>
 									</li>
 								</ul>
 							</div>
@@ -137,16 +137,16 @@
 												<li class="span3">
 													<div class="product-box">
 														<span class="sale_tag"></span>												
-														<a href="product_detail.html"><img alt="" src="themes/images/ladies/6.jpg"></a><br/>
-														<a href="product_detail.html" class="title">Wuam ultrices rutrum</a><br/>
-														<a href="#" class="category">Suspendisse aliquet</a>
-														<p class="price">$341</p>
+														<a href="product_detail.html"><img alt="" src="themes/images/ladies/1.jpg"></a><br/>
+														<a href="product_detail.html" class="title">Switch T-shirt</a><br/>
+														<a href="#" class="category">T-shirt</a>
+														<p class="price">$4.00</p>
 													</div>
 												</li>
 												<li class="span3">
 													<div class="product-box">
 														<span class="sale_tag"></span>												
-														<a href="product_detail.html"><img alt="" src="themes/images/ladies/5.jpg"></a><br/>
+														<a href="product_detail.html"><img alt="" src="themes/images/ladies/1.jpg"></a><br/>
 														<a href="product_detail.html" class="title">Fusce id molestie massa</a><br/>
 														<a href="#" class="category">Phasellus consequat</a>
 														<p class="price">$341</p>
@@ -154,7 +154,7 @@
 												</li>       
 												<li class="span3">
 													<div class="product-box">												
-														<a href="product_detail.html"><img alt="" src="themes/images/ladies/4.jpg"></a><br/>
+														<a href="product_detail.html"><img alt="" src="themes/images/ladies/1.jpg"></a><br/>
 														<a href="product_detail.html" class="title">Praesent tempor sem</a><br/>
 														<a href="#" class="category">Erat gravida</a>
 														<p class="price">$28</p>
@@ -201,20 +201,14 @@
 						<div class="block">	
 							<ul class="nav nav-list">
 								<li class="nav-header">SUB CATEGORIES</li>
-								<li><a href="products.html">Nullam semper elementum</a></li>
-								<li class="active"><a href="products.html">Phasellus ultricies</a></li>
-								<li><a href="products.html">Donec laoreet dui</a></li>
-								<li><a href="products.html">Nullam semper elementum</a></li>
-								<li><a href="products.html">Phasellus ultricies</a></li>
-								<li><a href="products.html">Donec laoreet dui</a></li>
+								<li><a href="products.html">Pants</a></li>
+								<li class="active"><a href="products.html">T-shirts</a></li>
 							</ul>
 							<br/>
 							<ul class="nav nav-list below">
 								<li class="nav-header">MANUFACTURES</li>
-								<li><a href="products.html">Adidas</a></li>
-								<li><a href="products.html">Nike</a></li>
-								<li><a href="products.html">Dunlop</a></li>
-								<li><a href="products.html">Yamaha</a></li>
+								<li><a href="products.html">Switch</a></li>
+								<li><a href="products.html">Gucci</a></li>
 							</ul>
 						</div>
 						<div class="block">
