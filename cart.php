@@ -3,50 +3,15 @@ include("header.php");
 include("navbar.php");
 ?>
 <img class="pageBanner" src="themes/images/pageBanner.png" alt="New products">
-<h4><span>Shopping Cart</span></h4>
+
 </section>
 <section class="main-content">
 
-
 	<h4 class="title"><span class="text"><strong>Your</strong> Cart</span></h4>
-	<table class="table table-striped">
-		<thead>
-			<tr>
-				<th>Remove</th>
-				<th>Image</th>
-				<th>Product Name</th>
-				<th>Quantity</th>
-				<th>Unit Price</th>
-				<th>Total</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td><input type="checkbox" value="option1"></td>
-				<td><a href="product_detail.php"><img alt="" src="themes/images/ladies/9.jpg"></a></td>
-				<td>T-shirt</td>
-				<td><input type="text" placeholder="10" class="input-mini"></td>
-				<td>€4.00</td>
-				<td>€40.00</td>
-			</tr>
-			<tr>
-				<td><input type="checkbox" value="option1"></td>
-				<td><a href="product_detail.php"><img alt="" src="themes/images/ladies/3.jpg"></a></td>
-				<td>Pants</td>
-				<td><input type="text" placeholder="1" class="input-mini"></td>
-				<td>€4.00</td>
-				<td>€4.00</td>
-			</tr>
-			<tr>
-				<td>&nbsp;</td>
-				<td>&nbsp;</td>
-				<td>&nbsp;</td>
-				<td>&nbsp;</td>
-				<td>&nbsp;</td>
-				<td><strong>€44.00</strong></td>
-			</tr>
-		</tbody>
+	<table class="show-cart table table-striped">			
 	</table>
+	<div>Total price: <span class="total-cart"></span>€</div>
+	
 	<h4>What type of shipping would you like?</h4>
 	<p>Choose the eco delivery cost.</p>
 	<label class="radio">

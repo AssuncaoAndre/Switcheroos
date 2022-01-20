@@ -37,7 +37,7 @@
 </section>
 </div>
 <script src="themes/js/common.js"></script>
-
+<script src="cart.js"></script>
 </body>
 
 </html>

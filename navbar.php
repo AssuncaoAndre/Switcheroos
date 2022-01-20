@@ -6,7 +6,7 @@
 			<div class="account pull-right">
 				<ul class="user-menu">
 					<li><a href="#">My Account</a></li>
-					<li><a href="cart.php">Your Cart \ Checkout</a></li>
+					<li><a href="cart.php">Your Cart(<span class="total-count"></span>) \ Checkout</a></li>
 					<li><a href="register.php">Login</a></li>
 				</ul>
 			</div>
@@ -19,16 +19,37 @@
 			<a href="index.php" class="logo pull-left"><img src="themes/images/logo.png" class="site_logo" alt=""></a>
 			<nav id="menu" class="pull-right">
 				<ul>
-					<li><a href="./products.php">Woman</a>
+				<?php
+					include_once("./backend/connect.php");
+					$db=getDB();
+					
+				?>
+					<li><a href="./products.php?sex=Woman">Woman</a>
 						<ul>
-							<li><a href="./products.php">Pants</a></li>
-							<li><a href="./products.php">T-Shirts</a></li>
+							<?php 
+							$categories=getCategoriesBySex($db, "Woman"); 
+							
+							foreach($categories as $category)
+							{							
+							?>
+								<li><a href=<?= "./products.php?sex=Woman&category=".$category['category']?>><?=$category['category']?></a></li>
+							<?php
+							}
+							?>
 						</ul>
 					</li>
-					<li><a href="./products.php">Man</a>
+					<li><a href="./products.php?sex=Man">Man</a>
 						<ul>
-							<li><a href="./products.php">Pants</a></li>
-							<li><a href="./products.php">T-Shirts</a></li>
+							<?php 
+							$categories=getCategoriesBySex($db, "Man"); 
+
+							foreach($categories as $category)
+							{							
+							?>
+								<li><a href=<?= "./products.php?sex=Man&category=".$category['category']?>><?=$category['category']?></a></li>
+							<?php
+							}
+							?>
 						</ul>
 					</li>
 				</ul>
