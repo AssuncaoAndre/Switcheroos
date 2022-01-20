@@ -1,3 +1,6 @@
+DROP TABLE IF EXISTS Product;
+DROP TABLE IF EXISTS User;
+
 CREATE TABLE Product (
     productCode INTEGER NOT NULL PRIMARY KEY,
     productBrand TEXT NOT NULL,
@@ -5,15 +8,16 @@ CREATE TABLE Product (
     productPrice FLOAT NOT NULL,
     productSize TEXT NOT NULL,
     productColor TEXT NOT NULL,
+    productDurability INTEGER NOT NULL,
+    productDescription TEXT,
+    productImage TEXT,
     quantity INTEGER NOT NULL,
     rewardPoints INTEGER,
-    avaliability INTEGER,
 
 
     CONSTRAINT chk_reward CHECK(rewardPoints >= 0),
     CONSTRAINT chk_productPrice CHECK(productPrice >= 0),
     CONSTRAINT chk_quantity CHECK(quantity >= 0)
-    CONSTRAINT chk_avaliability CHECK(avaliability == 0 OR avaliability == 1)
 );
 
 CREATE TABLE User (
