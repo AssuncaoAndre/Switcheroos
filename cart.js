@@ -1,0 +1,1 @@
+purchase=document.querySelector("")

@@ -11,11 +11,11 @@ CREATE TABLE Product (
     durability INTEGER NOT NULL,
     description TEXT,
     image TEXT,
+    color TEXT,
     quantity INTEGER NOT NULL,
-    rewardPoints INTEGER,
+    carbon_footprint INTEGER,
 
 
-    CONSTRAINT chk_reward CHECK(rewardPoints >= 0),
     CONSTRAINT chk_price CHECK(price >= 0),
     CONSTRAINT chk_quantity CHECK(quantity >= 0)
 );

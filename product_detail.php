@@ -21,38 +21,17 @@ include("navbar.php");
 						<div class="row">
 							<div class="span4">
 								<a href="themes/images/ladies/1.jpg" class="thumbnail" data-fancybox-group="group1" title="Description 1"><img alt="" src=<?= $product["image"]?>></a>												
-								<ul class="thumbnails small">								
-									<li class="span1">
-										<a href="themes/images/ladies/1.jpg" class="thumbnail" data-fancybox-group="group1" title="Description 2"><img src="themes/images/ladies/1.jpg" alt=""></a>
-									</li>								
-									<li class="span1">
-										<a href="themes/images/ladies/1.jpg" class="thumbnail" data-fancybox-group="group1" title="Description 3"><img src="themes/images/ladies/1.jpg" alt=""></a>
-									</li>													
-									<li class="span1">
-										<a href="themes/images/ladies/1.jpg" class="thumbnail" data-fancybox-group="group1" title="Description 4"><img src="themes/images/ladies/1.jpg" alt=""></a>
-									</li>
-									<li class="span1">
-										<a href="themes/images/ladies/1.jpg" class="thumbnail" data-fancybox-group="group1" title="Description 5"><img src="themes/images/ladies/1.jpg" alt=""></a>
-									</li>
-								</ul>
+								
 							</div>
 							<div class="span5">
 								<address>
-									<strong>Brand:</strong> <span><?=$product["brand"]?></span><br>
-									<strong>Reward Points:</strong> <span><?=$product["rewardPoints"]?></span><br>
+									<strong>Brand:</strong><span><?=$product["brand"]?></span><br>
+									<strong>Carbon Footprint:</strong> <span><?=$product["carbon_footprint"]?> </span><br>
 									<strong>Availability:</strong> <span><?=$product["quantity"]==0 ? "Out of stock" : $product["quantity"]?></span><br>								
 								</address>									
-								<h4><strong>$<?=$product["price"]?></strong></h4>
+								<h4><strong><?=$product["price"]?>€</strong></h4>
 							</div>
 							<div class="span5">
-								
-								<label class="checkbox">
-									<input type="checkbox" value=""> Option one is this and that
-								</label>
-								<br/>
-								<label class="checkbox">
-									<input type="checkbox" value=""> Be sure to include why it's great
-								</label>
 								<p>&nbsp;</p>
 								<label>Qty:</label>
 								<input type="text" class="span1" placeholder="1">
@@ -102,7 +81,7 @@ include("navbar.php");
 														<a href="product_detail.php"><img alt="" src="themes/images/ladies/1.jpg"></a><br/>
 														<a href="product_detail.php" class="title">Switch T-shirt</a><br/>
 														<a href="#" class="category">T-shirt</a>
-														<p class="price">$4.00</p>
+														<p class="price">€4.00</p>
 													</div>
 												</li>
 												<li class="span3">
@@ -111,7 +90,7 @@ include("navbar.php");
 														<a href="product_detail.php"><img alt="" src="themes/images/ladies/1.jpg"></a><br/>
 														<a href="product_detail.php" class="title">Fusce id molestie massa</a><br/>
 														<a href="#" class="category">Phasellus consequat</a>
-														<p class="price">$341</p>
+														<p class="price">€341</p>
 													</div>
 												</li>       
 												<li class="span3">
@@ -119,7 +98,7 @@ include("navbar.php");
 														<a href="product_detail.php"><img alt="" src="themes/images/ladies/1.jpg"></a><br/>
 														<a href="product_detail.php" class="title">Praesent tempor sem</a><br/>
 														<a href="#" class="category">Erat gravida</a>
-														<p class="price">$28</p>
+														<p class="price">€28</p>
 													</div>
 												</li>												
 											</ul>
@@ -132,7 +111,7 @@ include("navbar.php");
 														<a href="product_detail.php"><img alt="" src="themes/images/ladies/1.jpg"></a><br/>
 														<a href="product_detail.php" class="title">Fusce id molestie massa</a><br/>
 														<a href="#" class="category">Phasellus consequat</a>
-														<p class="price">$341</p>
+														<p class="price">€341</p>
 													</div>
 												</li>       
 												<li class="span3">
@@ -140,7 +119,7 @@ include("navbar.php");
 														<a href="product_detail.php"><img alt="" src="themes/images/ladies/2.jpg"></a><br/>
 														<a href="product_detail.php">Praesent tempor sem</a><br/>
 														<a href="#" class="category">Erat gravida</a>
-														<p class="price">$28</p>
+														<p class="price">€28</p>
 													</div>
 												</li>
 												<li class="span3">
@@ -149,7 +128,7 @@ include("navbar.php");
 														<a href="product_detail.php"><img alt="" src="themes/images/ladies/3.jpg"></a><br/>
 														<a href="product_detail.php" class="title">Wuam ultrices rutrum</a><br/>
 														<a href="#" class="category">Suspendisse aliquet</a>
-														<p class="price">$341</p>
+														<p class="price">€341</p>
 													</div>
 												</li>
 											</ul>
@@ -190,7 +169,7 @@ include("navbar.php");
 													<a href="product_detail.php"><img alt="" src="themes/images/ladies/7.jpg"></a><br/>
 													<a href="product_detail.php" class="title">Fusce id molestie massa</a><br/>
 													<a href="#" class="category">Suspendisse aliquet</a>
-													<p class="price">$261</p>
+													<p class="price">€261</p>
 												</div>
 											</li>
 										</ul>
@@ -202,7 +181,7 @@ include("navbar.php");
 													<a href="product_detail.php"><img alt="" src="themes/images/ladies/8.jpg"></a><br/>
 													<a href="product_detail.php" class="title">Tempor sem sodales</a><br/>
 													<a href="#" class="category">Urna nec lectus mollis</a>
-													<p class="price">$134</p>
+													<p class="price">€134</p>
 												</div>
 											</li>
 										</ul>
@@ -236,44 +215,9 @@ include("navbar.php");
 					</div>
 				</div>
 			</section>			
-			<section id="footer-bar">
-				<div class="row">
-					<div class="span3">
-						<h4>Navigation</h4>
-						<ul class="nav">
-							<li><a href="./index.php">Homepage</a></li>  
-							<li><a href="./about.php">About Us</a></li>
-							<li><a href="./contact.php">Contac Us</a></li>
-							<li><a href="./cart.php">Your Cart</a></li>
-							<li><a href="./register.php">Login</a></li>							
-						</ul>					
-					</div>
-					<div class="span4">
-						<h4>My Account</h4>
-						<ul class="nav">
-							<li><a href="#">My Account</a></li>
-							<li><a href="#">Order History</a></li>
-							<li><a href="#">Wish List</a></li>
-							<li><a href="#">Newsletter</a></li>
-						</ul>
-					</div>
-					<div class="span5">
-						<p class="logo"><img src="themes/images/logo.png" class="site_logo" alt=""></p>
-						<p>Save the enviornment by giving a second chance! :)</p>
-						<br/>
-						<span class="social_icons">
-							<a class="facebook" href="#">Facebook</a>
-							<a class="twitter" href="#">Twitter</a>
-							<a class="skype" href="#">Skype</a>
-							<a class="vimeo" href="#">Vimeo</a>
-						</span>
-					</div>					
-				</div>	
-			</section>
-			<section id="copyright">
-				<span>Copyright 2022 Switcheroos  All right reserved.</span>
-			</section>
-		</div>
+<?php
+include("footer.php")
+?>
 		<script src="themes/js/common.js"></script>
 		<script src="cart.js"></script>
 		<script>
@@ -295,5 +239,3 @@ include("navbar.php");
                 });								
 			});
 		</script>
-    </body>
-</html>
