@@ -129,26 +129,10 @@
 								</div>
 								<div id="collapseTwo" class="accordion-body collapse">
 									<div id="dynamic-forms-container"></div>
+									<button class="btn btn-inverse pull-right">Confirm order</button>
 								</div>
 							</div>
-							<div class="accordion-group">
-								<div class="accordion-heading">
-									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">Confirm Order</a>
-								</div>
-								<div id="collapseThree" class="accordion-body collapse">
-									<div class="accordion-inner">
-										<div class="row-fluid">
-											<div class="control-group">
-												<label for="textarea" class="control-label">Comments</label>
-												<div class="controls">
-													<textarea rows="3" id="textarea" class="span12"></textarea>
-												</div>
-											</div>									
-											<button class="btn btn-inverse pull-right">Confirm order</button>
-										</div>
-									</div>
-								</div>
-							</div>
+
 						</div>				
 					</div>
 				</div>
@@ -192,18 +176,7 @@
 			</section>
 		</div>
 		<script src="themes/js/common.js"></script> <script src="https://cdn.switchpayments.com/libs/switch-5.stable.min.js"></script>
-		<!-- Step 3                         -->
-		<!-- Instatiante the client library -->
-		<script>
-			let formContainer = document.getElementById("dynamic-forms-container");
-			let formOptions = {
-				chargesUrl: "http://localhost:8000/charges.php",
-				merchantTransactionId: "123456",
-			};
-			let switchJs = new SwitchJs(SwitchJs.environments.TEST, "AY1NAHUkocpVMIag9i8xfOlDPBEjVUJMuwgmsEQHFzApwS2tmwhAousPm4XC0tl");
-			switchJs.dynamicForms(formContainer, formOptions);
-	
-	
-		</script>
+
+		<script src="payment.js"></script>
     </body>
 </html>

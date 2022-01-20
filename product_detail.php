@@ -1,34 +1,13 @@
 
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Bootstrap E-commerce Templates</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="">
-		<!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
-		
-		<!-- bootstrap -->
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">      
-		<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">		
-		<link href="themes/css/bootstrappage.css" rel="stylesheet"/>
-		
-		<!-- global styles -->
-		<link href="themes/css/main.css" rel="stylesheet"/>
-		<link href="themes/css/jquery.fancybox.css" rel="stylesheet"/>
-				
-		<!-- scripts -->
-		<script src="themes/js/jquery-1.7.2.min.js"></script>
-		<script src="bootstrap/js/bootstrap.min.js"></script>				
-		<script src="themes/js/superfish.js"></script>	
-		<script src="themes/js/jquery.scrolltotop.js"></script>
-		<script src="themes/js/jquery.fancybox.js"></script>
-		<!--[if lt IE 9]>			
-			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-			<script src="js/respond.min.js"></script>
-		<![endif]-->
-	</head>
+<?php 
+?>
     <body>		
+		<?php
+			$product_code=$_GET['product'];
+			include_once("./backend/connect.php");
+			$db=getDB();
+			$product=getProductByCode($db, $product_code);
+		?>
 		<div id="top-bar" class="container">
 			<div class="row">
 				<div class="span4">
@@ -97,12 +76,11 @@
 							</div>
 							<div class="span5">
 								<address>
-									<strong>Brand:</strong> <span>Apple</span><br>
-									<strong>Product Code:</strong> <span>Product 14</span><br>
-									<strong>Reward Points:</strong> <span>0</span><br>
-									<strong>Availability:</strong> <span>Out Of Stock</span><br>								
+									<strong>Brand:</strong> <span><?=$product["brand"]?></span><br>
+									<strong>Reward Points:</strong> <span><?=$product["rewardPoints"]?></span><br>
+									<strong>Availability:</strong> <span><?=$product["quantity"]==0 ? "Out of stock" : $product["quantity"]?></span><br>								
 								</address>									
-								<h4><strong>Price: $587.50</strong></h4>
+								<h4><strong><?=$product["price"]?></strong></h4>
 							</div>
 							<div class="span5">
 								<form class="form-inline">
