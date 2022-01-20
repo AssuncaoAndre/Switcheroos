@@ -1,73 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Bootstrap E-commerce Templates</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="">
-		<!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
-		<!-- bootstrap -->
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">      
-		<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">		
-		<link href="themes/css/bootstrappage.css" rel="stylesheet"/>
-		
-		<!-- global styles -->
-		<link href="themes/css/flexslider.css" rel="stylesheet"/>
-		<link href="themes/css/main.css" rel="stylesheet"/>
-
-		<!-- scripts -->
-		<script src="themes/js/jquery-1.7.2.min.js"></script>
-		<script src="bootstrap/js/bootstrap.min.js"></script>				
-		<script src="themes/js/superfish.js"></script>	
-		<script src="themes/js/jquery.scrolltotop.js"></script>
-		<!--[if lt IE 9]>			
-			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-			<script src="themes/js/respond.min.js"></script>
-		<![endif]-->
-	</head>
-    <body>		
-		<div id="top-bar" class="container">
-			<div class="row">
-				<div class="span4">
-					<form method="POST" class="search_form">
-						<input type="text" class="input-block-level search-query" Placeholder="eg. T-sirt">
-					</form>
-				</div>
-				<div class="span8">
-					<div class="account pull-right">
-						<ul class="user-menu">				
-							<li><a href="#">My Account</a></li>
-							<li><a href="cart.html">Your Cart</a></li>
-							<li><a href="checkout.html">Checkout</a></li>					
-							<li><a href="register.html">Login</a></li>			
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="wrapper" class="container">
-			<section class="navbar main-menu">
-				<div class="navbar-inner main-menu">				
-					<a href="index.html" class="logo pull-left"><img src="themes/images/logo.png" class="site_logo" alt=""></a>
-					<nav id="menu" class="pull-right">
-						<ul>
-							<li><a href="./products.html">Woman</a>					
-								<ul>
-									<li><a href="./products.html">Pants</a></li>									
-									<li><a href="./products.html">T-shirts</a></li>								
-								</ul>
-							</li>															
-							<li><a href="./products.html">Man</a>			
-								<ul>
-									<li><a href="./products.html">Pants</a></li>									
-									<li><a href="./products.html">T-shirts</a></li>										
-								</ul>
-							</li>							
-						</ul>
-					</nav>
-				</div>
-			</section>				
-			<section class="header_text sub">
+<?php 
+include("header.php");
+include("navbar.php");
+?>
 			<img class="pageBanner" src="themes/images/pageBanner.png" alt="New products" >
 				<h4><span>Shopping Cart</span></h4>
 			</section>
@@ -89,7 +23,7 @@
 							<tbody>
 								<tr>
 									<td><input type="checkbox" value="option1"></td>
-									<td><a href="product_detail.html"><img alt="" src="themes/images/ladies/9.jpg"></a></td>
+									<td><a href="product_detail.php"><img alt="" src="themes/images/ladies/9.jpg"></a></td>
 									<td>T-shirt</td>
 									<td><input type="text" placeholder="10" class="input-mini"></td>
 									<td>$4.00</td>
@@ -97,7 +31,7 @@
 								</tr>			  
 								<tr>
 									<td><input type="checkbox" value="option1"></td>
-									<td><a href="product_detail.html"><img alt="" src="themes/images/ladies/3.jpg"></a></td>
+									<td><a href="product_detail.php"><img alt="" src="themes/images/ladies/3.jpg"></a></td>
 									<td>Pants</td>
 									<td><input type="text" placeholder="1" class="input-mini"></td>
 									<td>$4.00</td>
@@ -149,8 +83,8 @@
 											<li class="span3">
 												<div class="product-box">
 													<span class="sale_tag"></span>												
-													<a href="product_detail.html"><img alt="" src="themes/images/ladies/2.jpg"></a><br/>
-													<a href="product_detail.html" class="title">Switch</a><br/>
+													<a href="product_detail.php"><img alt="" src="themes/images/ladies/2.jpg"></a><br/>
+													<a href="product_detail.php" class="title">Switch</a><br/>
 													<a href="#" class="category">T-shirt</a>
 													<p class="price">$4</p>
 												</div>
@@ -161,8 +95,8 @@
 										<ul class="thumbnails listing-products">
 											<li class="span3">
 												<div class="product-box">												
-													<a href="product_detail.html"><img alt="" src="themes/images/ladies/4.jpg"></a><br/>
-													<a href="product_detail.html" class="title">Switch</a><br/>
+													<a href="product_detail.php"><img alt="" src="themes/images/ladies/4.jpg"></a><br/>
+													<a href="product_detail.php" class="title">Switch</a><br/>
 													<a href="#" class="category">Pants</a>
 													<p class="price">$4</p>
 												</div>
@@ -180,11 +114,11 @@
 					<div class="span3">
 						<h4>Navigation</h4>
 						<ul class="nav">
-							<li><a href="./index.html">Homepage</a></li>  
-							<li><a href="./about.html">About Us</a></li>
-							<li><a href="./contact.html">Contac Us</a></li>
-							<li><a href="./cart.html">Your Cart</a></li>
-							<li><a href="./register.html">Login</a></li>							
+							<li><a href="./index.php">Homepage</a></li>  
+							<li><a href="./about.php">About Us</a></li>
+							<li><a href="./contact.php">Contac Us</a></li>
+							<li><a href="./cart.php">Your Cart</a></li>
+							<li><a href="./register.php">Login</a></li>							
 						</ul>					
 					</div>
 					<div class="span4">
@@ -217,7 +151,7 @@
 		<script>
 			$(document).ready(function() {
 				$('#checkout').click(function (e) {
-					document.location.href = "checkout.html";
+					document.location.href = "checkout.php";
 				})
 			});
 		</script>		

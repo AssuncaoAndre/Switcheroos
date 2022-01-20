@@ -1,76 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Bootstrap E-commerce Templates</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="">
-		<!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
-		<!-- bootstrap -->
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">      
-		<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">		
-		<link href="themes/css/bootstrappage.css" rel="stylesheet"/>
-		
-		<!-- global styles -->
-		<link href="themes/css/flexslider.css" rel="stylesheet"/>
-		<link href="themes/css/main.css" rel="stylesheet"/>
-
-		<!-- scripts -->
-		<script src="themes/js/jquery-1.7.2.min.js"></script>
-		<script src="bootstrap/js/bootstrap.min.js"></script>				
-		<script src="themes/js/superfish.js"></script>	
-		<script src="themes/js/jquery.scrolltotop.js"></script>
-		<!--[if lt IE 9]>			
-			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-			<script src="js/respond.min.js"></script>
-		<![endif]-->
-	</head>
-    <body>		
-		<div id="top-bar" class="container">
-			<div class="row">
-				<div class="span4">
-					<form method="POST" class="search_form">
-						<input type="text" class="input-block-level search-query" Placeholder="eg. T-sirt">
-					</form>
-				</div>
-				<div class="span8">
-					<div class="account pull-right">
-						<ul class="user-menu">				
-							<li><a href="#">My Account</a></li>
-							<li><a href="cart.html">Your Cart</a></li>
-							<li><a href="checkout.html">Checkout</a></li>					
-							<li><a href="register.html">Login</a></li>			
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="wrapper" class="container">
-			<section class="navbar main-menu">
-				<div class="navbar-inner main-menu">				
-					<a href="index.html" class="logo pull-left"><img src="themes/images/logo.png" class="site_logo" alt=""></a>
-					<nav id="menu" class="pull-right">
-						<ul>
-							<li><a href="./products.html">Woman</a>					
-								<ul>
-									<li><a href="./products.html">Pants</a></li>									
-									<li><a href="./products.html">T-shirts</a></li>								
-								</ul>
-							</li>															
-							<li><a href="./products.html">Man</a>
-								<ul>
-									<li><a href="./products.html">Pants</a></li>									
-									<li><a href="./products.html">T-shirts</a></li>								
-								</ul>			
-							</l1>
-						</ul>
-					</nav>
-				</div>
-			</section>							
+<?php 
+include("header.php");
+include("navbar.php");
+?>						
 			<section class="google_map">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3002.9912394790845!2d-8.598034084580675!3d41.178358279283884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd246446d48922a3%3A0x8b1e4a0bcdacc840!2sFEUP%20-%20Faculdade%20de%20Engenharia%20da%20Universidade%20do%20Porto!5e0!3m2!1sen!2spt!4v1642537824706!5m2!1sen!2spt" width="1190" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>></iframe>
 			</section>
-			<section class="header_text sub">
 			<img class="pageBanner" src="themes/images/pageBanner.png" alt="New products" >
 				<h4><span>Contact Us</span></h4>
 			</section>
@@ -123,11 +57,11 @@
 					<div class="span3">
 						<h4>Navigation</h4>
 						<ul class="nav">
-							<li><a href="./index.html">Homepage</a></li>  
-							<li><a href="./about.html">About Us</a></li>
-							<li><a href="./contact.html">Contac Us</a></li>
-							<li><a href="./cart.html">Your Cart</a></li>
-							<li><a href="./register.html">Login</a></li>							
+							<li><a href="./index.php">Homepage</a></li>  
+							<li><a href="./about.php">About Us</a></li>
+							<li><a href="./contact.php">Contac Us</a></li>
+							<li><a href="./cart.php">Your Cart</a></li>
+							<li><a href="./register.php">Login</a></li>							
 						</ul>					
 					</div>
 					<div class="span4">

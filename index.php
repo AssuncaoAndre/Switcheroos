@@ -43,9 +43,9 @@
 					<div class="account pull-right">
 						<ul class="user-menu">				
 							<li><a href="#">My Account</a></li>
-							<li><a href="cart.html">Your Cart</a></li>
-							<li><a href="checkout.html">Checkout</a></li>					
-							<li><a href="register.html">Login</a></li>		
+							<li><a href="cart.php">Your Cart</a></li>
+							<li><a href="checkout.php">Checkout</a></li>					
+							<li><a href="register.php">Login</a></li>		
 						</ul>
 					</div>
 				</div>
@@ -54,19 +54,19 @@
 		<div id="wrapper" class="container">
 			<section class="navbar main-menu">
 				<div class="navbar-inner main-menu">				
-					<a href="index.html" class="logo pull-left"><img src="themes/images/logo.png" class="site_logo" alt=""></a>
+					<a href="index.php" class="logo pull-left"><img src="themes/images/logo.png" class="site_logo" alt=""></a>
 					<nav id="menu" class="pull-right">
 						<ul>
-							<li><a href="./products.html">Woman</a>					
+							<li><a href="./products.php">Woman</a>					
 								<ul>
-									<li><a href="./products.html">Pants</a></li>								
-									<li><a href="./products.html">T-shirts</a></li>								
+									<li><a href="./products.php">Pants</a></li>								
+									<li><a href="./products.php">T-shirts</a></li>								
 								</ul>
 							</li>															
-							<li><a href="./products.html">Man</a>
+							<li><a href="./products.php">Man</a>
 								<ul>
-									<li><a href="./products.html">Pants</a></li>									
-									<li><a href="./products.html">T-shirts</a></li>								
+									<li><a href="./products.php">Pants</a></li>									
+									<li><a href="./products.php">T-shirts</a></li>								
 								</ul>
 							</li>									
 						</ul>
@@ -108,7 +108,7 @@
 													<div class="product-box">
 														<p><a href=<?="product_detail.php?product=".$product["code"]?>><img src=<?=$product["image"]?> alt="" /></a></p>
 														<a href=<?="product_detail.php?product=".$product["code"]?> class="title"><?=$product["name"]?></a><br/>
-														<a href="products.html" class="category"><?=$product["brand"]?></a>
+														<a href="products.php" class="category"><?=$product["brand"]?></a>
 														<p class="price">$<?= $product["price"]?></p>
 													</div>
 												</li>
@@ -121,33 +121,33 @@
 											<ul class="thumbnails">
 												<li class="span3">
 													<div class="product-box">
-														<p><a href="product_detail.html"><img src="themes/images/ladies/5.jpg" alt="" /></a></p>
-														<a href="product_detail.html" class="title">Know exactly</a><br/>
-														<a href="products.html" class="category">Quis nostrud</a>
+														<p><a href="product_detail.php"><img src="themes/images/ladies/5.jpg" alt="" /></a></p>
+														<a href="product_detail.php" class="title">Know exactly</a><br/>
+														<a href="products.php" class="category">Quis nostrud</a>
 														<p class="price">$22.30</p>
 													</div>
 												</li>
 												<li class="span3">
 													<div class="product-box">
-														<p><a href="product_detail.html"><img src="themes/images/ladies/6.jpg" alt="" /></a></p>
-														<a href="product_detail.html" class="title">Ut wisi enim ad</a><br/>
-														<a href="products.html" class="category">Commodo consequat</a>
+														<p><a href="product_detail.php"><img src="themes/images/ladies/6.jpg" alt="" /></a></p>
+														<a href="product_detail.php" class="title">Ut wisi enim ad</a><br/>
+														<a href="products.php" class="category">Commodo consequat</a>
 														<p class="price">$40.25</p>
 													</div>
 												</li>
 												<li class="span3">
 													<div class="product-box">
-														<p><a href="product_detail.html"><img src="themes/images/ladies/7.jpg" alt="" /></a></p>
-														<a href="product_detail.html" class="title">You think water</a><br/>
-														<a href="products.html" class="category">World once</a>
+														<p><a href="product_detail.php"><img src="themes/images/ladies/7.jpg" alt="" /></a></p>
+														<a href="product_detail.php" class="title">You think water</a><br/>
+														<a href="products.php" class="category">World once</a>
 														<p class="price">$10.45</p>
 													</div>
 												</li>
 												<li class="span3">
 													<div class="product-box">
-														<p><a href="product_detail.html"><img src="themes/images/ladies/8.jpg" alt="" /></a></p>
-														<a href="product_detail.html" class="title">Quis nostrud exerci</a><br/>
-														<a href="products.html" class="category">Quis nostrud</a>
+														<p><a href="product_detail.php"><img src="themes/images/ladies/8.jpg" alt="" /></a></p>
+														<a href="product_detail.php" class="title">Quis nostrud exerci</a><br/>
+														<a href="products.php" class="category">Quis nostrud</a>
 														<p class="price">$35.50</p>
 													</div>
 												</li>																																	
@@ -163,8 +163,8 @@
 								<div class="service">
 									<div class="responsive">	
 										<img src="themes/images/feature_img_2.png" alt="" />
-										<h4>MODERN <strong>DESIGN</strong></h4>
-										<p>Lorem Ipsum is simply dummy text of the printing and printing industry unknown printer.</p>									
+										<h4>BEST <strong>SECOND HAND PRODUCTS</strong></h4>
+										<p>We strive for saving the Planet.</p>									
 									</div>
 								</div>
 							</div>
@@ -181,8 +181,8 @@
 								<div class="service">
 									<div class="support">	
 										<img src="themes/images/feature_img_3.png" alt="" />
-										<h4>24/7 LIVE <strong>SUPPORT</strong></h4>
-										<p></p>
+										<h4>THE LOWEST <strong>ECOLOGICAL FOOTPRINT</strong></h4>
+										<p>Each product was a ecological footprint description.</p>
 									</div>
 								</div>
 							</div>	
@@ -218,11 +218,11 @@
 					<div class="span3">
 						<h4>Navigation</h4>
 						<ul class="nav">
-							<li><a href="./index.html">Homepage</a></li>  
-							<li><a href="./about.html">About Us</a></li>
-							<li><a href="./contact.html">Contac Us</a></li>
-							<li><a href="./cart.html">Your Cart</a></li>
-							<li><a href="./register.html">Login</a></li>							
+							<li><a href="./index.php">Homepage</a></li>  
+							<li><a href="./about.php">About Us</a></li>
+							<li><a href="./contact.php">Contac Us</a></li>
+							<li><a href="./cart.php">Your Cart</a></li>
+							<li><a href="./register.php">Login</a></li>							
 						</ul>					
 					</div>
 					<div class="span4">
