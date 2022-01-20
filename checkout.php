@@ -1,7 +1,9 @@
 <?php
 include("header.php");
 include("navbar.php");
+$price = $_GET["price"];
 ?>
+<p id="price" style="display:none"><?= $price ?></p>
 <img class="pageBanner" src="themes/images/pageBanner.png" alt="New products">
 <h4><span>Check Out</span></h4>
 </section>

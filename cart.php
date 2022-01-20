@@ -14,20 +14,20 @@ include("navbar.php");
 	
 	<h4>What type of shipping would you like?</h4>
 	<p>Choose the eco delivery cost.</p>
-	<label class="radio">
-		<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+	<label class="radio"  onclick="updateShipping()">
+		<input type="radio" name="optionsRadios" id="optionsRadios1" value="high"  >
 		I pay for my own carbon (Pay the carbon emissions resulted from the delivery)
 	</label>
-	<label class="radio">
-		<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+	<label class="radio" onclick="updateShipping()">
+		<input type="radio" name="optionsRadios" id="optionsRadios2" value="low" checked="" >
 		Delay Shipping for the health of the planet (The most eco friendly delivery possible)*
 		<p style="font-size:0.85em">*We wait until the delivery truck has an optimized route to deliver all products with minimal carbon footprint</p>
 	</label>
 	<hr>
 	<p class="cart-total right">
-		<strong>Sub-Total</strong>: €44.00<br>
-		<strong>Carbon Free </strong>: €2.00<br>
-		<strong>Total</strong>: €46.00<br>
+		<strong>Sub-Total</strong>: €<span id="sub-total">44.00</span><br>
+		<strong>Shipping </strong>: €<span id="shipping">2.00</span><br>
+		<strong>Total</strong>: €<span id="total">2.00</span><br>
 	</p>
 	<hr />
 	<p class="buttons center">
@@ -41,7 +41,9 @@ include("navbar.php");
 <script>
 	$(document).ready(function() {
 		$('#checkout').click(function(e) {
-			document.location.href = "checkout.php";
+			let c=document.querySelector("#total")
+			let price=c.innerHTML
+			document.location.href = "checkout.php?price="+price;
 		})
 	});
 </script>

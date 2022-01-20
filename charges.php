@@ -11,6 +11,7 @@ $charge_type=$input["chargeType"];
 $data='"charge_type": "'.$charge_type.'",
 "currency": "EUR",
 "amount": 10';
+
 $hostname="https://api-test.switchpayments.com";
 $url="/v2/charges";
 $auth="0fkm3FLosPqPYOkpwxfCp9QiApIET43jYwPyARpdSD9sSiHmY2mQboc9ugPkGHF:EH7sSjR2u8SxdHkw3DkqQBDB5KYkNBMgrWclhJnUffpcGA2LS7pju5ULkYZKDoU";

@@ -27,14 +27,13 @@ include("navbar.php");
 								<address>
 									<strong>Brand:</strong><span><?=$product["brand"]?></span><br>
 									<strong>Carbon Footprint:</strong> <span><?=$product["carbon_footprint"]?> </span><br>
-									<strong>Stock:</strong> <span><?=$product["quantity"]==0 ? "Out of stock" : $product["quantity"]?></span><br>								
+									<strong>Stock:</strong> <span id="stock"><?=$product["quantity"]==0 ? "Out of stock" : $product["quantity"]?></span><br>								
 								</address>									
 								<h4><strong><?=$product["price"]?>€</strong></h4>
 							</div>
 							<div class="span5">
 								<p>&nbsp;</p>
-
-								<a href="#" data-name=<?= $product["name"]?> data-price=<?=$product['price']?> class="add-to-cart btn btn-inverse">Add to cart</a>	
+								<a href="#" data-name=<?= $product["name"] ?> data-price=<?=$product['price']?> class="add-to-cart btn btn-inverse">Add to cart(<span class="total-count"></span>)</a>	
 							</div>							
 						</div>
 						<div class="row">
@@ -44,7 +43,7 @@ include("navbar.php");
 									<li class=""><a href="#profile">Additional Information</a></li>
 								</ul>							 
 								<div class="tab-content">
-									<div class="tab-pane active" id="home"><?php $product["description"]?></div>
+									<div class="tab-pane active" id="home"><?= $product["description"]?></div>
 									<div class="tab-pane" id="profile">
 										<table class="table table-striped shop_attributes">	
 											<tbody>
